@@ -4,7 +4,7 @@ import HeroImage from "../assets/hero.png";
 
 function Hero() {
   return (
-    <section>
+    <section className="relative mt-4 flex h-fit max-w-7xl flex-col">
       <div>
         {/* LEFT SIDE */}
         <h1>Start spending the smart way</h1>
