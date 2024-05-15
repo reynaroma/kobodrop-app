@@ -11,12 +11,15 @@ function Features() {
         </p>
 
       </article>
-      <article>
-        <div>
-          <h2>Pay with Kobodrop, quick, simple and easy</h2>
-          <p>
-            Paying your bills on Kobodrop has never been easier. Whether you are paying for electricity or internet, Kobodrop gets it done within seconds.
-          </p>
+
+      <article className="flex w-full flex-col gap-8 overflow-hidden xl:h-96 xl:flex-row">
+        <div className="flex flex-col rounded-2xl bg-sky-100 px-4 sm:px-0 md:flex-row md:gap-8 xl:w-2/3">
+          <div className="mt-10 flex flex-col justify-center gap-4 text-center sm:mx-10 md:mx-0 md:ml-10 md:w-1/2 md:text-left">
+            <h2>Pay with Kobodrop, quick, simple and easy</h2>
+            <p>
+              Paying your bills on Kobodrop has never been easier. Whether you are paying for electricity or internet, Kobodrop gets it done within seconds.
+            </p>
+          </div>
         </div>
       </article>
     </section>
