@@ -1,4 +1,4 @@
-import { Disclosure, DisclosureButton } from "@headlessui/react";
+import { Disclosure, DisclosureButton, DisclosurePanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/16/solid";
 import Kobodrop from "../assets/logos/kobodrop_logo.svg";
 
@@ -13,7 +13,7 @@ function Nav() {
               <a href="#">
                 <img src={Kobodrop} alt="Kobodrop" />
               </a>
-              <div className="sm:flex hidden space-x-4 items-center ml-4">
+              <div className="hidden sm:flex space-x-4 items-center ml-4">
                 <a className="text-gray-500 hover:text-gray-900 active:text-gray-400" href="#features">Features</a>
                 <a className="text-gray-500 hover:text-gray-900 active:text-gray-400" href="#partners">Partners</a>
                 <a className="text-gray-500 hover:text-gray-900 active:text-gray-400" href="#reviews">Reviews</a>
@@ -32,6 +32,17 @@ function Nav() {
               )}
 
             </DisclosureButton>
+            <DisclosurePanel className="space-y-1">
+              <DisclosureButton
+                className="block" as="a" href="#features">Features
+              </DisclosureButton>
+              <DisclosureButton
+                className="block" as="a" href="#partners">Partners
+              </DisclosureButton>
+              <DisclosureButton
+                className="block" as="a" href="#reviews">Reviews
+              </DisclosureButton>
+            </DisclosurePanel>
           </div>
         </>
       )
