@@ -9,8 +9,8 @@ function Hero() {
         <p>Take Control of your Finances Anytime, Anywhere with Kobodrop.
           Discover the Smart Way to Use Your Money!
         </p>
+        <StoreLinks />
       </div>
-      <StoreLinks />
 
     </section>
   )
