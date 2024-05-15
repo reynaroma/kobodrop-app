@@ -4,7 +4,7 @@ import StoreLink from '../common/StoreLink';
 
 function StoreLinks() {
   return (
-    <div className='mt-10 justify-center space-x-2 sm:flex md:justify-normal'>
+    <div className='hidden mt-10 justify-center space-x-2 sm:flex md:justify-normal'>
       <StoreLink
         href="https://www.apple.com/app-store"
         upperText='Download on the'

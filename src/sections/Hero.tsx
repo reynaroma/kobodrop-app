@@ -4,7 +4,9 @@ import HeroImage from "../assets/hero.png";
 
 function Hero() {
   return (
-    <section className="relative mt-4 flex h-fit max-w-7xl flex-col">
+    <section className="relative mt-4 flex h-fit max-w-7xl flex-col
+    items-center gap-10 px-8 sm:gap-16 md:my-0 md:flex-row md:h-[85vh]
+    md:gap-0 lg:px-12 xl:m-auto xl:gap-0 xl:overflow-hidden">
       <div>
         {/* LEFT SIDE */}
         <h1>Start spending the smart way</h1>
