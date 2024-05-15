@@ -1,4 +1,4 @@
-import { Disclosure } from "@headlessui/react";
+import { Disclosure, DisclosureButton } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/16/solid";
 import Kobodrop from "../assets/logos/kobodrop_logo.svg";
 
@@ -7,7 +7,8 @@ function Nav() {
     <Disclosure as="nav">
       {({ open }) => (
         <>
-          <div className="flex h-[15vh] items-center max-w-7xl px-8">
+          <div className="flex h-[15vh] items-center max-w-7xl px-8
+          justify-between">
             <div className="flex">
               <a href="#">
                 <img src={Kobodrop} alt="Kobodrop" />
@@ -20,6 +21,11 @@ function Nav() {
             </div>
             <a href="https://play.google.com" target="_blank" className="bg-gray-800 text-white rounded-xl px-5 py-3
             hover:bg-gray-900 active:bg-gray-600">Install Kobodrop</a>
+            <DisclosureButton className="rounded-md p-2 text-gray-500
+            hover:bg-gray-700 hover:text-white">
+              <XMarkIcon className="block h-6 w-6" />
+              <Bars3Icon className="block h-6 w-6" />
+            </DisclosureButton>
           </div>
         </>
       )
