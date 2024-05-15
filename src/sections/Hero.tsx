@@ -15,6 +15,10 @@ function Hero() {
           className="flex gap-3 bg-zinc-900 px-4 py-3 rounded
       text-white hover:bg-zinc-950 active:bg-zinc-800">
           <img src={AppleLogo} alt="Apple logo" className='w-5' />
+          <div>
+            <p className='text-xs'>Download on the</p>
+            <p>App Store</p>
+          </div>
         </a>
       </div>
 
