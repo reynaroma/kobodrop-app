@@ -11,7 +11,7 @@ function Hero() {
         {/* LEFT SIDE */}
         <h1
           className="text-center mx-auto mb-8 w-[12ch] text-4xl font-semibold text-gray-800 sm:text-5xl md:mx-0 md:text-left">Start spending the smart way</h1>
-        <p className="m-auto w-[34ch] text-center text-gray-500 md:m-0 md:text-left">Take Control of your Finances Anytime, Anywhere with Kobodrop.
+        <p className="m-auto w-[34ch] text-center text-gray-500 md:m-0 md:text-left">Take Control of Your Finances Anytime, Anywhere with Kobodrop.
           Discover the Smart Way to Use Your Money!
         </p>
         <StoreLinks />

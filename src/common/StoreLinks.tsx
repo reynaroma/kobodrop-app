@@ -8,9 +8,9 @@ function StoreLinks() {
       <StoreLink
         href="https://www.apple.com/app-store"
         upperText='Download on the'
-        lowerText='Apple Store'
+        lowerText='App Store'
         logo={AppleLogo}
-        className='flex gap-3 bg-zinc-900 px-4 py-3 rounded
+        className='flex gap-3 bg-zinc-900 px-4 py-3 rounded-lg
           text-white hover:bg-zinc-950 active:bg-zinc-800'
         target='_blank'
       />
@@ -19,7 +19,7 @@ function StoreLinks() {
         upperText='Get it on'
         lowerText='Google Play'
         logo={GoogleLogo}
-        className='flex gap-3 bg-zinc-900 px-4 py-3 rounded
+        className='flex gap-3 bg-zinc-900 px-4 py-3 rounded-lg
           text-white hover:bg-zinc-950 active:bg-zinc-800'
         target='_blank'
       />
