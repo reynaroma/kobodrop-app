@@ -2,8 +2,15 @@ import { Disclosure, DisclosureButton, DisclosurePanel } from "@headlessui/react
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/16/solid";
 import Kobodrop from "../assets/logos/kobodrop_logo.svg";
 import ButtonLink from "../common/ButtonLink";
+import { Children } from "react";
 
 function Nav() {
+  const navLinks = [
+    { href: "#features", children: "Features" },
+    { href: "#partners", children: "Partners" },
+    { href: "#reviews", children: "Reviews" }
+  ];
+
   return (
     <Disclosure as="nav">
       {({ open }) => (
