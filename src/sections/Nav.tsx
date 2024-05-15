@@ -2,7 +2,6 @@ import { Disclosure, DisclosureButton, DisclosurePanel } from "@headlessui/react
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/16/solid";
 import Kobodrop from "../assets/logos/kobodrop_logo.svg";
 import ButtonLink from "../common/ButtonLink";
-import { Children } from "react";
 
 function Nav() {
   const textLinkClasses = "text-gray-500 hover:text-gray-900 active:text-gray-400";
@@ -21,9 +20,14 @@ function Nav() {
             <div className="flex">
               <ButtonLink href="#" children={<img src={Kobodrop} alt="Kobodrop logo" />} />
               <div className="hidden sm:flex space-x-4 items-center ml-4">
-                <a className="text-gray-500 hover:text-gray-900 active:text-gray-400" href="#features">Features</a>
-                <a className="text-gray-500 hover:text-gray-900 active:text-gray-400" href="#partners">Partners</a>
-                <a className="text-gray-500 hover:text-gray-900 active:text-gray-400" href="#reviews">Reviews</a>
+                { navLinks.map((link, index) => (
+                  <ButtonLink
+                  key={index}
+                  href={link.href}
+                  children={link.children}
+                  className={textLinkClasses}
+                  />
+                ))}
               </div>
             </div>
             <a
