@@ -1,5 +1,5 @@
 import StoreLinks from "../common/StoreLinks";
-import Phone from "../assets/app_frame.png";
+import Phone from "../assets/mockup.svg";
 import HeroImage from "../assets/hero.png";
 
 function Hero() {
@@ -19,9 +19,11 @@ function Hero() {
       <div className="md:w-3/6 xl:mb-12 xl:overflow-hidden">
         {/* RIGHT SIDE */}
         <img
-          className="right-0 m-auto w-72 xl:absolute xl:left-6 xl:ml-32 xl:right-0 xl:w-80"
+          className="right-0 m-auto w-72 xl:absolute xl:left-6 xl:mt-32 xl:right-0 xl:w-80"
           src={Phone} alt="Kobodrop App Frame" />
-        <img src={HeroImage} alt="A woman happily using Kobodrop" />
+        <img
+          className="hidden rounded-2xl xl:flex"
+          src={HeroImage} alt="A woman happily using Kobodrop" />
       </div>
     </section>
   )
