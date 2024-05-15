@@ -1,4 +1,5 @@
 import AppleLogo from '../assets/logos/app_store.svg';
+import GoogleLogo from '../assets/logos/google_play.svg';
 import StoreLink from '../common/StoreLink';
 
 function Hero() {
@@ -17,6 +18,15 @@ function Hero() {
           upperText='Download on the'
           lowerText='Apple Store'
           logo={AppleLogo}
+          className='flex gap-3 bg-zinc-900 px-4 py-3 rounded
+          text-white hover:bg-zinc-950 active:bg-zinc-800'
+          target='_blank'
+        />
+        <StoreLink
+          href="https://play.google.com/"
+          upperText='Get it on'
+          lowerText='Google Play'
+          logo={GoogleLogo}
           className='flex gap-3 bg-zinc-900 px-4 py-3 rounded
           text-white hover:bg-zinc-950 active:bg-zinc-800'
           target='_blank'
