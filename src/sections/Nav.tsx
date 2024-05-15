@@ -50,7 +50,9 @@ function Nav() {
               <DisclosureButton
                 className="block"
                 key={index}
-                as="a">
+                as="a"
+                href={link.href}
+                >
                 {link.children}
               </DisclosureButton>
             ))}
