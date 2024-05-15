@@ -20,21 +20,21 @@ function Nav() {
             <div className="flex">
               <ButtonLink href="#" children={<img src={Kobodrop} alt="Kobodrop logo" />} />
               <div className="hidden sm:flex space-x-4 items-center ml-4">
-                { navLinks.map((link, index) => (
+                {navLinks.map((link, index) => (
                   <ButtonLink
-                  key={index}
-                  href={link.href}
-                  children={link.children}
-                  className={textLinkClasses}
+                    key={index}
+                    href={link.href}
+                    children={link.children}
+                    className={textLinkClasses}
                   />
                 ))}
               </div>
             </div>
-            <a
+            <ButtonLink
               href="https://play.google.com"
               target="_blank"
-              className="hidden sm:flex bg-gray-800 text-white rounded-xl px-5 py-3
-            hover:bg-gray-900 active:bg-gray-600">Install Kobodrop</a>
+              children="Install Kobodrop"
+              className="hidden sm:flex bg-gray-800 text-white rounded-xl px-5 py-3 hover:bg-gray-900 active:bg-gray-600" />
             <DisclosureButton className=" sm:hidden rounded-md p-2 text-gray-500 hover:bg-gray-700 hover:text-white">
               {open ? (
                 <XMarkIcon className="block h-6 w-6" />
