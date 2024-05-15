@@ -5,6 +5,7 @@ import ButtonLink from "../common/ButtonLink";
 import { Children } from "react";
 
 function Nav() {
+  const textLinkClasses = "text-gray-500 hover:text-gray-900 active:text-gray-400";
   const navLinks = [
     { href: "#features", children: "Features" },
     { href: "#partners", children: "Partners" },
