@@ -15,8 +15,8 @@ function Hero() {
       </div>
       <div>
         {/* RIGHT SIDE */}
-        <img src={Phone} alt="Phone Image"/>
-        <img src={HeroImage} alt="Hero Image"/>
+        <img src={Phone} alt="Kobodrop App Frame"/>
+        <img src={HeroImage} alt="A woman happily using Kobodrop"/>
       </div>
     </section>
   )
