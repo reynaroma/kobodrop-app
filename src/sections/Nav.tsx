@@ -32,21 +32,20 @@ function Nav() {
               )}
 
             </DisclosureButton>
-            <DisclosurePanel className="space-y-1">
-              <DisclosureButton
-                className="block" as="a" href="#features">Features
-              </DisclosureButton>
-              <DisclosureButton
-                className="block" as="a" href="#partners">Partners
-              </DisclosureButton>
-              <DisclosureButton
-                className="block" as="a" href="#reviews">Reviews
-              </DisclosureButton>
-            </DisclosurePanel>
           </div>
+          <DisclosurePanel className="">
+            <DisclosureButton
+              className="block" as="a" href="#features">Features
+            </DisclosureButton>
+            <DisclosureButton
+              className="block" as="a" href="#partners">Partners
+            </DisclosureButton>
+            <DisclosureButton
+              className="block" as="a" href="#reviews">Reviews
+            </DisclosureButton>
+          </DisclosurePanel>
         </>
-      )
-      }
+      )}
     </Disclosure >
   )
 }
