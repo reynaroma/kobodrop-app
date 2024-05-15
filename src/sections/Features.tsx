@@ -9,7 +9,15 @@ function Features() {
           Spend smarter, lower your bills, get cashback on everything you buy, <br />
           and unlock credit to grow your business.
         </p>
-        {/* <p>Paying your bills on Kobodrop has never been easier. Whether you are paying for electricity or internet, Kobodrop gets it done within seconds.</p> */}
+
+      </article>
+      <article>
+        <div>
+          <h2>Pay with Kobodrop, quick, simple and easy</h2>
+          <p>
+            Paying your bills on Kobodrop has never been easier. Whether you are paying for electricity or internet, Kobodrop gets it done within seconds.
+          </p>
+        </div>
       </article>
     </section>
   )
