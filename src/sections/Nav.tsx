@@ -16,7 +16,7 @@ function Nav() {
       {({ open }) => (
         <>
           <div className="flex h-[15vh] items-center max-w-7xl px-8
-          justify-between">
+          justify-between lg:px-12 xl:m-auto">
             <div className="flex">
               <ButtonLink href="#" children={<img src={Kobodrop} alt="Kobodrop logo" />} />
               <div className="hidden sm:flex space-x-4 items-center ml-4">
@@ -44,16 +44,15 @@ function Nav() {
 
             </DisclosureButton>
           </div>
-          <DisclosurePanel className="">
-            <DisclosureButton
-              className="block" as="a" href="#features">Features
-            </DisclosureButton>
-            <DisclosureButton
-              className="block" as="a" href="#partners">Partners
-            </DisclosureButton>
-            <DisclosureButton
-              className="block" as="a" href="#reviews">Reviews
-            </DisclosureButton>
+          <DisclosurePanel className="space-y-1 px-4 sm:hidden">
+            {navLinks.map((link, index) => (
+              <DisclosureButton
+                className="block"
+                key={index}
+                as="a">
+                {link.children}
+              </DisclosureButton>
+            ))}
           </DisclosurePanel>
         </>
       )}
