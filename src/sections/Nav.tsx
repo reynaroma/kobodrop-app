@@ -18,7 +18,8 @@ function Nav() {
                 <a className="text-gray-500 hover:text-gray-900 active:text-gray-400" href="#reviews">Reviews</a>
               </div>
             </div>
-            <a href="https://play.google.com" target="_blank" className="">Install Kobodrop</a>
+            <a href="https://play.google.com" target="_blank" className="bg-gray-800 text-white rounded-xl px-5 py-3
+            hover:bg-gray-900 active:bg-gray-600">Install Kobodrop</a>
           </div>
         </>
       )
