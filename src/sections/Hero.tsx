@@ -16,9 +16,11 @@ function Hero() {
         </p>
         <StoreLinks />
       </div>
-      <div className="">
+      <div className="md:w-3/6 xl:mb-12 xl:overflow-hidden">
         {/* RIGHT SIDE */}
-        <img src={Phone} alt="Kobodrop App Frame" />
+        <img
+          className="right-0 m-auto w-72 xl:absolute xl:left-6 xl:ml-32 xl:right-0 xl:w-80"
+          src={Phone} alt="Kobodrop App Frame" />
         <img src={HeroImage} alt="A woman happily using Kobodrop" />
       </div>
     </section>
