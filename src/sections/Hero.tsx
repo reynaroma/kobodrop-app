@@ -13,7 +13,8 @@ function Hero() {
         <a
           href="https://www.apple.com/app-store"
           className="flex gap-3 bg-zinc-900 px-4 py-3 rounded
-      text-white hover:bg-zinc-950 active:bg-zinc-800">
+      text-white hover:bg-zinc-950 active:bg-zinc-800"
+          target=''>
           <img src={AppleLogo} alt="Apple logo" className='w-5' />
           <div>
             <p className='text-xs'>Download on the</p>
