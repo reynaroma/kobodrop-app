@@ -23,8 +23,12 @@ function Nav() {
             hover:bg-gray-900 active:bg-gray-600">Install Kobodrop</a>
             <DisclosureButton className="rounded-md p-2 text-gray-500
             hover:bg-gray-700 hover:text-white">
-              <XMarkIcon className="block h-6 w-6" />
-              <Bars3Icon className="block h-6 w-6" />
+              {open ? (
+                <XMarkIcon className="block h-6 w-6" />
+              ) : (
+                <Bars3Icon className="block h-6 w-6" />
+              )}
+
             </DisclosureButton>
           </div>
         </>
