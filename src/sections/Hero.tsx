@@ -1,4 +1,6 @@
-import AppleLogo from '../assets/logos/app_store.svg'
+import AppleLogo from '../assets/logos/app_store.svg';
+import StoreLink from '../common/StoreLink';
+
 function Hero() {
   return (
     <section>
@@ -10,17 +12,15 @@ function Hero() {
         </p>
       </div>
       <div className='mt-10 justify-center space-x-2 sm:flex md:justify-normal'>
-        <a
+        <StoreLink
           href="https://www.apple.com/app-store"
-          className="flex gap-3 bg-zinc-900 px-4 py-3 rounded
-      text-white hover:bg-zinc-950 active:bg-zinc-800"
-          target=''>
-          <img src={AppleLogo} alt="Apple logo" className='w-5' />
-          <div>
-            <p className='text-xs'>Download on the</p>
-            <p>App Store</p>
-          </div>
-        </a>
+          upperText='Download on the'
+          lowerText='Apple Store'
+          logo={AppleLogo}
+          className='flex gap-3 bg-zinc-900 px-4 py-3 rounded
+          text-white hover:bg-zinc-950 active:bg-zinc-800'
+          target='_blank'
+        />
       </div>
 
     </section>
