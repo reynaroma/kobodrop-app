@@ -19,7 +19,8 @@ function Nav() {
           justify-between lg:px-12 xl:m-auto">
             <div className="flex">
               <ButtonLink href="#" children={<img src={Kobodrop} alt="Kobodrop logo" />} />
-              <div className="hidden sm:flex space-x-4 items-center ml-4">
+              <div className="hidden sm:flex space-x-4 items-center ml-4
+              lg:ml-8 lg:space-x-8">
                 {navLinks.map((link, index) => (
                   <ButtonLink
                     key={index}
