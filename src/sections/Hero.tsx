@@ -1,3 +1,4 @@
+import StoreLinks from "../common/StoreLinks"
 
 function Hero() {
   return (
@@ -9,7 +10,7 @@ function Hero() {
           Discover the Smart Way to Use Your Money!
         </p>
       </div>
-      
+      <StoreLinks />
 
     </section>
   )
