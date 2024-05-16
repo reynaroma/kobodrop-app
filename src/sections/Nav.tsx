@@ -46,25 +46,30 @@ function Nav() {
 
             </DisclosureButton>
           </div>
-          
-          <DisclosurePanel
-            as={motion.div}
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.4, ease: easeOut }}
-            className="flex flex-col items-center justify-center text-3xl gap-12 sm:hidden h-[calc(100vh-15vh)] text-white bg-gray-800">
-            {navLinks.map((link, index) => (
-              <DisclosureButton
-                className="block"
-                key={index}
-                as="a"
-                href={link.href}
-              >
-                {link.children}
-              </DisclosureButton>
-            ))}
-          </DisclosurePanel>
+          <AnimatePresence>
+            {open && (
+              <DisclosurePanel
+                static
+                as={motion.div}
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                transition={{ duration: 0.3, ease: easeOut }}
+                className="flex flex-col items-center justify-center text-3xl gap-12 sm:hidden h-[calc(100vh-15vh)] text-white bg-gray-800">
+                {navLinks.map((link, index) => (
+                  <DisclosureButton
+                    className="block"
+                    key={index}
+                    as="a"
+                    href={link.href}
+                  >
+                    {link.children}
+                  </DisclosureButton>
+                ))}
+              </DisclosurePanel>
+            )}
+          </AnimatePresence>
+
         </>
       )}
     </Disclosure >
