@@ -1,4 +1,7 @@
 import { useState } from "react";
+import ArrowBack from '../assets/icons/arrow_back.svg';
+import ArrowForward from '../assets/icons/arrow_forward.svg';
+
 interface CarouselProps {
   slides: Slide[];
 }
@@ -38,6 +41,8 @@ function Carousel({ slides }: CarouselProps) {
           </div>
         ))}
       </div>
+      <img onClick={previousSlide} className="absolute bottom-5 right-16 h-7 w-7 rounded-full border p-1 hover:cursor-pointer" src={ArrowBack} alt="Previous slide button" />
+      <img onClick={nextSlide} className="absolute bottom-5 right-4 h-7 w-7 rounded-full border p-1 hover:cursor-pointer" src={ArrowForward} alt="Previous slide button" />
     </div>
   )
 }
