@@ -1,4 +1,4 @@
-import StoreLinks from "../common/StoreLinks";
+import StoreLinks, { BtnTypes } from "../common/StoreLinks";
 import Phone from "../assets/mockup.svg";
 import HeroImage from "../assets/hero.png";
 
@@ -14,7 +14,7 @@ function Hero() {
         <p className="m-auto w-[34ch] text-center text-gray-500 md:m-0 md:text-left">Take Control of Your Finances Anytime, Anywhere with Kobodrop.
           Discover the Smart Way to Use Your Money!
         </p>
-        <StoreLinks />
+        <StoreLinks type={BtnTypes.Standard}/>
       </div>
       <div className="md:w-3/6 xl:mb-12 xl:overflow-hidden">
         {/* RIGHT SIDE */}
