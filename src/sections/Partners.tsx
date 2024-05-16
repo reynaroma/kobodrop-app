@@ -1,6 +1,7 @@
 import Klarna from '../assets/logo-wall/klarna.png';
 import Stripe from '../assets/logo-wall/stripe.png';
 import Paypal from '../assets/logo-wall/paypal.png';
+import LogoWall from "../common/LogoWall";
 
 function Partners() {
   return (
@@ -11,11 +12,7 @@ function Partners() {
           integrations with other payment platforms like stripe, paypal, payoneer and others</p>
       </article>
       <div className='xl:flex xl:justify-center'>
-        <article className='flex mb-8 justify-center gap-8 text-center'>
-          <img src={Klarna} alt="Klarna logo" className='w-20 md:w-36' />
-          <img src={Stripe} alt="Stripe logo" className='w-20 md:w-36' />
-          <img src={Paypal} alt="Paypal logo" className='w-20 md:w-36' />
-        </article>
+
       </div>
     </section>
   )
