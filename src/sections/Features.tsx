@@ -1,5 +1,6 @@
 import AppFrame from '../assets/app_frame.png';
-import ShieldCheck from '../assets/icons/check.png'
+import ShieldCheck from '../assets/icons/check.png';
+import Coins from '../assets/icons/coins.png';
 
 function Features() {
   return (
@@ -36,14 +37,14 @@ function Features() {
           </p>
         </div>
       </article>
-      <article className="flex w-full flex-col gap-8 overflow-hidden xl:h-96 xl:flex-row">
-        <div className='flex flex-col justify-center gap-4 rounded-2xl bg-indigo-100 p-10 xl:w-1/3'>
-          <div className='w-fit rounded-full bg-indigo-200 p-4'>
-            <img src={ShieldCheck} alt='' />
+      <article className="flex w-full flex-col gap-8 xl:h-96 xl:flex-row">
+        <div className='flex flex-col justify-center gap-4 rounded-2xl bg-orange-100 p-10 xl:w-1/3'>
+          <div className='w-fit rounded-full bg-orange-200 p-4'>
+            <img src={Coins} alt='' />
           </div>
-          <h2 className='text-3xl font-semibold text-gray-800'>Bank level security</h2>
+          <h2 className='text-3xl font-semibold text-gray-800'>Cost reduction</h2>
           <p className='text-gray-500'>
-            Your money is 100% safe and secure on Kobodrop. No hassles, no glitches, get access to your money anytime.
+          Kobodrop reduced payments maintenance and processing fees. No hidden fees.
           </p>
         </div>
         <div className="flex flex-col rounded-2xl bg-sky-100 px-4 sm:px-0 md:flex-row md:gap-8 xl:w-2/3">
