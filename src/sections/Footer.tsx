@@ -1,5 +1,8 @@
 import KobodropLight from '../assets/logos/kobodrop_logo_bright.png';
 import StoreLinks from '../common/StoreLinks';
+import Twitter from '../assets/logos/icons8-twitterx.svg';
+import Facebook from '../assets/logos/icons8-facebook.svg';
+import LinkedIn from '../assets/logos/icons8-linkedin.svg';
 
 function Footer() {
   return (
@@ -43,19 +46,19 @@ function Footer() {
           <p className='w-[16ch] text-gray-400 md:w-full'>&copy; 2024 Kobodrop. All rights reserved.</p>
           <div className='flex gap-6'>
             <a
-              href='https://www.facebook.com/littleraaaain/'
+              href='https://twitter.com/'
               target='_blank'>
-              <img />
+              <img src={Twitter} alt='Twitter logo' />
             </a>
             <a
-              href='https://www.linkedin.com/in/reyna-may-roma'
+              href='https://www.facebook.com/'
               target='_blank'>
-              <img />
+              <img src={Facebook} alt='Facebook logo'/>
             </a>
             <a
-              href='https://github.com/reynaroma'
+              href='https://www.linkedin.com/'
               target='_blank'>
-              <img />
+              <img src={LinkedIn} alt='LinkedIn logo'/>
             </a>
           </div>
         </div>
