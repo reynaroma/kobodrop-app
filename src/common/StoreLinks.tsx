@@ -17,8 +17,8 @@ export enum BtnTypes {
 function StoreLinks({ type }: StoreLinksProps) {
   if (type === BtnTypes.Standard) {
     return (
-      <div className='hidden mt-10 justify-center space-x-3 sm:flex md:justify-normal'>
-        <motion.div whileHover={{ scale: 1.1 }}>
+      <div className='hidden mt-10 justify-center space-x-2 sm:flex md:justify-normal'>
+        <motion.div whileHover={{ scale: 1.05 }}>
           <StoreLink
             href="https://www.apple.com/app-store"
             upperText='Download on the'
@@ -29,7 +29,7 @@ function StoreLinks({ type }: StoreLinksProps) {
             target='_blank'
           />
         </motion.div>
-        <motion.div whileHover={{ scale: 1.1 }}>
+        <motion.div whileHover={{ scale: 1.05 }}>
           <StoreLink
             href="https://play.google.com/"
             upperText='Get it on'
@@ -48,24 +48,28 @@ function StoreLinks({ type }: StoreLinksProps) {
   if (type === BtnTypes.Variant) {
     return (
       <>
-        <StoreLink
-          href="https://www.apple.com/app-store"
-          upperText='Download on the'
-          lowerText='App Store'
-          logo={AppleLogo}
-          className='my-4 border flex gap-3 bg-transparent px-2 py-1 rounded-lg
+        <motion.div whileHover={{ scale: 1.05 }}>
+          <StoreLink
+            href="https://www.apple.com/app-store"
+            upperText='Download on the'
+            lowerText='App Store'
+            logo={AppleLogo}
+            className='my-4 border flex gap-3 bg-transparent px-2 py-1 rounded-lg
             text-white hover:bg-zinc-950 active:bg-zinc-800'
-          target='_blank'
-        />
-        <StoreLink
-          href="https://play.google.com/"
-          upperText='Get it on'
-          lowerText='Google Play'
-          logo={GooglePlayBright}
-          className='my-4 border flex gap-3 bg-transparent px-2 py-1 rounded-lg
+            target='_blank'
+          />
+        </motion.div>
+        <motion.div whileHover={{ scale: 1.05 }}>
+          <StoreLink
+            href="https://play.google.com/"
+            upperText='Get it on'
+            lowerText='Google Play'
+            logo={GooglePlayBright}
+            className='my-4 border flex gap-3 bg-transparent px-2 py-1 rounded-lg
             text-white hover:bg-zinc-950 active:bg-zinc-800'
-          target='_blank'
-        />
+            target='_blank'
+          />
+        </motion.div>
       </>
     )
   }
