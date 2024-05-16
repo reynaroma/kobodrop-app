@@ -12,7 +12,7 @@ function Partners() {
           integrations with other payment platforms like stripe, paypal, payoneer and others</p>
       </article>
       <div className='xl:flex xl:justify-center'>
-
+        <LogoWall src1={Klarna} src2={Stripe} src3={Paypal} alt1="Klarna logo" alt2="Stripe logo" alt3="Paypal logo" />
       </div>
     </section>
   )
