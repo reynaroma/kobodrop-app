@@ -2,6 +2,7 @@ import { Disclosure, DisclosureButton, DisclosurePanel } from "@headlessui/react
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/16/solid";
 import Kobodrop from "../assets/logos/kobodrop_logo.svg";
 import ButtonLink from "../common/ButtonLink";
+import { AnimatePresence, easeOut, motion } from 'framer-motion';
 
 function Nav() {
   const textLinkClasses = "text-gray-500 hover:text-gray-900 active:text-gray-400";
@@ -45,14 +46,21 @@ function Nav() {
 
             </DisclosureButton>
           </div>
-          <DisclosurePanel className="flex flex-col items-center justify-center text-3xl gap-12 sm:hidden h-[calc(100vh-15vh)] text-white bg-gray-800">
+          
+          <DisclosurePanel
+            as={motion.div}
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.4, ease: easeOut }}
+            className="flex flex-col items-center justify-center text-3xl gap-12 sm:hidden h-[calc(100vh-15vh)] text-white bg-gray-800">
             {navLinks.map((link, index) => (
               <DisclosureButton
                 className="block"
                 key={index}
                 as="a"
                 href={link.href}
-                >
+              >
                 {link.children}
               </DisclosureButton>
             ))}
