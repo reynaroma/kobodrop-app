@@ -31,10 +31,10 @@ function Carousel({ slides }: CarouselProps) {
 
   return (
     <div className="relative h-[400px] max-w-[400px] overflow-hidden rounded-2xl">
-      <div className="flex transition duration-300 ease-out" style={{transform: `translateX(-${current * 100}%)`}}>
+      <div className="flex transition duration-300 ease-out" style={{ transform: `translateX(-${current * 100}%)` }}>
         {slides.map((slide, index) => (
-          <div key={index}>
-            <img src={slide.src} alt={`Slideshow image ${index}`}/>
+          <div key={index} className="relative h-full w-full min-h-fit flex-shrink-0">
+            <img src={slide.src} alt={`Slideshow image ${index}`} className="min-h-[400px] object-cover" />
           </div>
         ))}
       </div>
