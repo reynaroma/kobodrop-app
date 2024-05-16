@@ -1,6 +1,7 @@
 import { useState } from "react";
 import ArrowBack from '../assets/icons/arrow_back.svg';
 import ArrowForward from '../assets/icons/arrow_forward.svg';
+import Star from '../assets/icons/star.svg';
 
 interface CarouselProps {
   slides: Slide[];
@@ -38,6 +39,20 @@ function Carousel({ slides }: CarouselProps) {
         {slides.map((slide, index) => (
           <div key={index} className="relative h-full w-full min-h-fit flex-shrink-0">
             <img src={slide.src} alt={`Slideshow image ${index}`} className="min-h-[400px] object-cover" />
+            <div className="absolute left-0 top-44 flex flex-col h-full w-full bg-gray-800/[0.6] p-4 text-white lg:gap-4">
+              <p>{slide.text}</p>
+              <div className="flex justify-between">
+                <h1 className="text-xl font-semibold">{slide.name}</h1>
+                <div className="hidden lg:flex">
+                  <img src={Star} className="h-5 w-5" alt="" />
+                  <img src={Star} className="h-5 w-5" alt="" />
+                  <img src={Star} className="h-5 w-5" alt="" />
+                  <img src={Star} className="h-5 w-5" alt=""/>
+                  <img src={Star} className="h-5 w-5" alt=""/>
+                </div>
+              </div>
+              <h2 className="">{slide.country}</h2>
+            </div>
           </div>
         ))}
       </div>
