@@ -23,7 +23,11 @@ function Reviews() {
 
   return (
     <section id="reviews">
-
+      <article>
+        <h2 className="mb-4 max-w-[16ch] text-center text-4xl font-semibold text-gray-800 lg:w-full lg:text-left">
+          Join other thousands of people growing with Kobodrop
+        </h2>
+      </article>
     </section>
   )
 }
