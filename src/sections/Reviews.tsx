@@ -1,3 +1,4 @@
+import StoreLinks from "../common/StoreLinks";
 
 function Reviews() {
   const slides = [
@@ -22,11 +23,12 @@ function Reviews() {
   ];
 
   return (
-    <section id="reviews">
+    <section id="reviews" className="flex justify-center">
       <article>
         <h2 className="mb-4 max-w-[16ch] text-center text-4xl font-semibold text-gray-800 lg:w-full lg:text-left">
           Join other thousands of people growing with Kobodrop
         </h2>
+        <StoreLinks />
       </article>
     </section>
   )
