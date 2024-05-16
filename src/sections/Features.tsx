@@ -21,7 +21,7 @@ function Features() {
               Paying your bills on Kobodrop has never been easier. Whether you are paying for electricity or internet, Kobodrop gets it done within seconds.
             </p>
           </div>
-          <div>
+          <div className='m-auto mt-10 max-w-72 md:mx-10 md:w-1/2 lg:mx-0'>
             <img src={AppFrame} alt='Kobodrop app frame'/>
           </div>
         </div>
