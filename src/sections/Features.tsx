@@ -3,7 +3,7 @@ import AppFrame from '../assets/app_frame.png';
 function Features() {
   return (
     <section id="features"
-      className="flex max-w-7xl flex-col gap-10 px-10 pt-10 lg:px-12 xl:pt-20">
+      className="flex max-w-7xl flex-col gap-10 px-10 pt-10 lg:px-12 xl:pt-20 m-auto">
       <article className="m-auto w-[30ch] text-center text-gray-500 md:m-0 md:w-full">
         <h2 className="mb-4 text-4xl font-semibold text-gray-800">Make every penny count</h2>
         <p>
@@ -24,6 +24,9 @@ function Features() {
           <div className='m-auto mt-10 max-w-72 md:mx-10 md:w-1/2 lg:mx-0'>
             <img src={AppFrame} alt='Kobodrop app frame'/>
           </div>
+        </div>
+        <div className='flex flex-col justify-center gap-4 rounded-2xl bg-indigo-100 p-10 xl:w-1/3'>
+
         </div>
       </article>
     </section>
