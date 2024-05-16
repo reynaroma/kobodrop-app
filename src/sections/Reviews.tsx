@@ -25,7 +25,7 @@ function Reviews() {
   return (
     <section id="reviews" className="flex max-w-7xl flex-col items-center justify-between px-8 py-20 lg:m-auto lg:flex-row lg:px-12">
       <article className="mb-10 flex flex-col items-center justify-center lg:w-1/2 lg:items-start">
-        <h2 className="mb-4 max-w-[16ch] text-center text-4xl font-semibold text-gray-800 lg:w-full lg:text-left">
+        <h2 className="mb-4 max-w-[14ch] text-center text-4xl font-semibold text-gray-800 lg:w-full lg:text-left leading-snug">
           Join other thousands of people growing with Kobodrop
         </h2>
         <StoreLinks />
