@@ -12,15 +12,27 @@ function Hero() {
         <div className="sm:w-full md:w-3/6">
           {/* LEFT SIDE */}
           <motion.h1
-            initial={{ x: 100, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
+            initial={{ y: -100, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ delay: 0.3, duration: 0.5 }}
             className="text-center mx-auto mb-8 w-[12ch] text-4xl font-semibold text-gray-800 sm:text-5xl md:mx-0 md:text-left">Start spending the smart way</motion.h1>
-          <p className="m-auto w-[34ch] text-center text-gray-500 md:m-0 md:text-left">Take Control of Your Finances Anytime, Anywhere with Kobodrop.
+          <motion.p
+            initial={{ x: 100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ delay: 0.5, duration: 0.5 }}
+            className="m-auto w-[34ch] text-center text-gray-500 md:m-0 md:text-left">Take Control of Your Finances Anytime, Anywhere with Kobodrop.
             Discover the Smart Way to Use Your Money!
-          </p>
-          <StoreLinks type={BtnTypes.Standard} />
+          </motion.p>
+          <motion.div
+            initial={{ x: 100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ delay: 0.7, duration: 0.5 }}
+          >
+            <StoreLinks type={BtnTypes.Standard} />
+          </motion.div>
         </div>
         <div className="md:w-3/6 xl:mb-12 xl:overflow-hidden">
           {/* RIGHT SIDE */}
