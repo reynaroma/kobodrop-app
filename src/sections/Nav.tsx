@@ -28,7 +28,7 @@ function Nav() {
               <div className="hidden sm:flex space-x-4 items-center ml-4
               lg:ml-8 lg:space-x-8">
                 {navLinks.map((link, index) => (
-                  <motion.div whileHover={{scale: 1.1}}>
+                  <motion.div whileHover={{ scale: 1.1 }}>
                     <ButtonLink
                       key={index}
                       href={link.href}
@@ -39,11 +39,13 @@ function Nav() {
                 ))}
               </div>
             </div>
-            <ButtonLink
-              href="https://play.google.com"
-              target="_blank"
-              children="Install Kobodrop"
-              className="hidden sm:flex bg-gray-800 text-white rounded-xl px-5 py-3 hover:bg-gray-900 active:bg-gray-600" />
+            <motion.div whileHover={{ scale: 1.2 }}>
+              <ButtonLink
+                href="https://play.google.com"
+                target="_blank"
+                children="Install Kobodrop"
+                className="hidden sm:flex bg-gray-800 text-white rounded-xl px-5 py-3 hover:bg-gray-900 active:bg-gray-600" />
+            </motion.div>
             <DisclosureButton className=" sm:hidden rounded-md p-2 text-gray-500 hover:bg-gray-700 hover:text-white">
               {open ? (
                 <motion.div
