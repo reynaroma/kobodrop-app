@@ -31,7 +31,7 @@ function Reviews() {
         </h2>
         <StoreLinks />
       </article>
-      <Carousel />
+      <Carousel slides={slides} />
     </section>
   )
 }
