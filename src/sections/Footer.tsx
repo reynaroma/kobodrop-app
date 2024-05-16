@@ -9,7 +9,32 @@ function Footer() {
             <img
               className="mb-4 w-36"
               src={KobodropLight}
-              alt="Light version of Kobodrop logo" />
+              alt="Light version of Kobodrop logo"
+            />
+            <p className=''>
+              Start spending the smart way
+            </p>
+          </div>
+          <div className='flex gap-10'>
+            <div className='flex flex-col gap-2'>
+              <p className='text-gray-400'>Product</p>
+              <a  href='#'>Overview</a>
+              <a  href='#'>Features</a>
+              <a  href='#'>Solutions</a>
+              <a  href='#'>Contact</a>
+              <a  href='#'>Releases</a>
+            </div>
+            <div className='flex flex-col gap-2'>
+              <p className='text-gray-400'>Resources</p>
+              <a  href='#'>Blog</a>
+              <a  href='#'>Newsletter</a>
+              <a  href='#'>Events</a>
+              <a  href='#'>Help Centre</a>
+              <a  href='#'>Support</a>
+            </div>
+          </div>
+          <div>
+            <p>Get the app</p>
           </div>
         </div>
       </div>
