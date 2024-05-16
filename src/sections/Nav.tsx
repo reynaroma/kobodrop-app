@@ -45,7 +45,7 @@ function Nav() {
 
             </DisclosureButton>
           </div>
-          <DisclosurePanel className="space-y-1 px-4 sm:hidden">
+          <DisclosurePanel className="flex flex-col items-center justify-center text-4xl gap-12 sm:hidden h-[calc(100vh-15vh)] text-white bg-gray-800">
             {navLinks.map((link, index) => (
               <DisclosureButton
                 className="block"
