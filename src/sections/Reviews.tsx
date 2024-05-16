@@ -1,3 +1,4 @@
+import Carousel from "../common/Carousel";
 import StoreLinks from "../common/StoreLinks";
 
 function Reviews() {
@@ -30,6 +31,7 @@ function Reviews() {
         </h2>
         <StoreLinks />
       </article>
+      <Carousel />
     </section>
   )
 }
