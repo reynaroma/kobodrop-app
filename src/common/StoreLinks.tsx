@@ -1,6 +1,7 @@
 import AppleLogo from '../assets/logos/app_store.svg';
 import GoogleLogo from '../assets/logos/google_play.svg';
 import StoreLink from '../common/StoreLink';
+import GooglePlayBright from '../assets/logos/google_play_bright.svg';
 
 interface StoreLinksProps {
   type: BtnTypes;
@@ -52,7 +53,7 @@ function StoreLinks({ type }: StoreLinksProps) {
           href="https://play.google.com/"
           upperText='Get it on'
           lowerText='Google Play'
-          logo={GoogleLogo}
+          logo={GooglePlayBright}
           className='my-4 border flex gap-3 bg-transparent px-2 py-1 rounded-lg
             text-white hover:bg-zinc-950 active:bg-zinc-800'
           target='_blank'
