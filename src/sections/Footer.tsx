@@ -39,8 +39,8 @@ function Footer() {
             <StoreLinks />
           </div>
         </div>
-        <div>
-            <p>&copy; 2024 Kobodrop. All rights reserved.</p>
+        <div className='mt-14 flex justify-between border-t-2 border-t-gray-700 pt-10'>
+            <p className='w-[16ch] text-gray-400 md:w-full'>&copy; 2024 Kobodrop. All rights reserved.</p>
         </div>
       </div>
     </section>
