@@ -1,4 +1,5 @@
 import KobodropLight from '../assets/logos/kobodrop_logo_bright.png';
+import StoreLinks from '../common/StoreLinks';
 
 function Footer() {
   return (
@@ -18,24 +19,28 @@ function Footer() {
           <div className='flex gap-10'>
             <div className='flex flex-col gap-2'>
               <p className='text-gray-400'>Product</p>
-              <a  href='#'>Overview</a>
-              <a  href='#'>Features</a>
-              <a  href='#'>Solutions</a>
-              <a  href='#'>Contact</a>
-              <a  href='#'>Releases</a>
+              <a href='#'>Overview</a>
+              <a href='#'>Features</a>
+              <a href='#'>Solutions</a>
+              <a href='#'>Contact</a>
+              <a href='#'>Releases</a>
             </div>
             <div className='flex flex-col gap-2'>
               <p className='text-gray-400'>Resources</p>
-              <a  href='#'>Blog</a>
-              <a  href='#'>Newsletter</a>
-              <a  href='#'>Events</a>
-              <a  href='#'>Help Centre</a>
-              <a  href='#'>Support</a>
+              <a href='#'>Blog</a>
+              <a href='#'>Newsletter</a>
+              <a href='#'>Events</a>
+              <a href='#'>Help Centre</a>
+              <a href='#'>Support</a>
             </div>
           </div>
-          <div>
-            <p>Get the app</p>
+          <div className='w-fit'>
+            <h2>Get the app</h2>
+            <StoreLinks />
           </div>
+        </div>
+        <div>
+            <p>&copy; 2024 Kobodrop. All rights reserved.</p>
         </div>
       </div>
     </section>
