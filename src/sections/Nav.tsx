@@ -28,12 +28,14 @@ function Nav() {
               <div className="hidden sm:flex space-x-4 items-center ml-4
               lg:ml-8 lg:space-x-8">
                 {navLinks.map((link, index) => (
-                  <ButtonLink
-                    key={index}
-                    href={link.href}
-                    children={link.children}
-                    className={textLinkClasses}
-                  />
+                  <motion.div whileHover={{scale: 1.1}}>
+                    <ButtonLink
+                      key={index}
+                      href={link.href}
+                      children={link.children}
+                      className={textLinkClasses}
+                    />
+                  </motion.div>
                 ))}
               </div>
             </div>
