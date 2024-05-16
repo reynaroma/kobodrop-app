@@ -1,4 +1,5 @@
 import AppFrame from '../assets/app_frame.png';
+import ShieldCheck from '../assets/icons/check.png'
 
 function Features() {
   return (
@@ -22,11 +23,17 @@ function Features() {
             </p>
           </div>
           <div className='m-auto mt-10 max-w-72 md:mx-10 md:w-1/2 lg:mx-0'>
-            <img src={AppFrame} alt='Kobodrop app frame'/>
+            <img src={AppFrame} alt='Kobodrop app frame' />
           </div>
         </div>
         <div className='flex flex-col justify-center gap-4 rounded-2xl bg-indigo-100 p-10 xl:w-1/3'>
-
+          <div className='w-fit rounded-full bg-indigo-200 p-4'>
+            <img src={ShieldCheck} alt='' />
+          </div>
+          <h2 className='text-3xl font-semibold text-gray-800'>Bank level security</h2>
+          <p className='text-gray-500'>
+            Your money is 100% safe and secure on Kobodrop. No hassles, no glitches, get access to your money anytime.
+          </p>
         </div>
       </article>
     </section>
