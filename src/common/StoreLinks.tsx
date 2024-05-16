@@ -2,6 +2,11 @@ import AppleLogo from '../assets/logos/app_store.svg';
 import GoogleLogo from '../assets/logos/google_play.svg';
 import StoreLink from '../common/StoreLink';
 
+enum BtnTypes {
+  Standard,
+  Variant,
+}
+
 function StoreLinks() {
   return (
     <div className='hidden mt-10 justify-center space-x-2 sm:flex md:justify-normal'>

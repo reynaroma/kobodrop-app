@@ -39,7 +39,7 @@ function Footer() {
           </div>
           <div className='w-fit'>
             <h2>Get the app</h2>
-            <StoreLinks />
+            <StoreLinks type={BtnTypes.Variant} />
           </div>
         </div>
         <div className='mt-14 flex justify-between border-t-2 border-t-gray-700 pt-10'>
