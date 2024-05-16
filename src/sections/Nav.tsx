@@ -39,9 +39,20 @@ function Nav() {
               className="hidden sm:flex bg-gray-800 text-white rounded-xl px-5 py-3 hover:bg-gray-900 active:bg-gray-600" />
             <DisclosureButton className=" sm:hidden rounded-md p-2 text-gray-500 hover:bg-gray-700 hover:text-white">
               {open ? (
-                <XMarkIcon className="block h-6 w-6" />
+                <motion.div
+                  whileHover={{ scale: 1.2, rotate: 90 }}
+                  whileTap={{ scale: 0.8, rotate: -180, borderRadius: "100%" }}
+                >
+                  <XMarkIcon className="block h-6 w-6" />
+                </motion.div>
+
               ) : (
-                <Bars3Icon className="block h-6 w-6" />
+                <motion.div
+                  whileHover={{ scale: 1.2, rotate: 180 }}
+                  whileTap={{ scale: 0.8, rotate: -90, borderRadius: "100%" }}
+                >
+                  <Bars3Icon className="block h-6 w-6" />
+                </motion.div>
               )}
 
             </DisclosureButton>
