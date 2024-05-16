@@ -1,5 +1,5 @@
 import KobodropLight from '../assets/logos/kobodrop_logo_bright.png';
-import StoreLinks from '../common/StoreLinks';
+import StoreLinks, { BtnTypes } from '../common/StoreLinks';
 import Twitter from '../assets/logos/icons8-twitterx.svg';
 import Facebook from '../assets/logos/icons8-facebook.svg';
 import LinkedIn from '../assets/logos/icons8-linkedin.svg';

@@ -6,7 +6,7 @@ interface StoreLinksProps {
   type: BtnTypes;
 }
 
-enum BtnTypes {
+export enum BtnTypes {
   Standard,
   Variant,
 }
