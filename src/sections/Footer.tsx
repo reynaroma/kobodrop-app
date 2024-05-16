@@ -3,6 +3,7 @@ import StoreLinks, { BtnTypes } from '../common/StoreLinks';
 import Twitter from '../assets/logos/icons8-twitterx.svg';
 import Facebook from '../assets/logos/icons8-facebook.svg';
 import LinkedIn from '../assets/logos/icons8-linkedin.svg';
+import { motion } from 'framer-motion';
 
 function Footer() {
   return (
@@ -45,21 +46,24 @@ function Footer() {
         <div className='mt-14 flex justify-between border-t-2 border-t-gray-700 pt-10'>
           <p className='w-[16ch] text-gray-400 md:w-full'>&copy; 2024 Kobodrop. All rights reserved.</p>
           <div className='flex gap-6'>
-            <a
+            <motion.a
+              whileHover={{ scale: 1.1 }}
               href='https://twitter.com/'
               target='_blank'>
               <img src={Twitter} alt='Twitter logo' />
-            </a>
-            <a
+            </motion.a>
+            <motion.a
+              whileHover={{ scale: 1.1 }}
               href='https://www.facebook.com/'
               target='_blank'>
-              <img src={Facebook} alt='Facebook logo'/>
-            </a>
-            <a
+              <img src={Facebook} alt='Facebook logo' />
+            </motion.a>
+            <motion.a
+              whileHover={{ scale: 1.1 }}
               href='https://www.linkedin.com/'
               target='_blank'>
-              <img src={LinkedIn} alt='LinkedIn logo'/>
-            </a>
+              <img src={LinkedIn} alt='LinkedIn logo' />
+            </motion.a>
           </div>
         </div>
       </div>
