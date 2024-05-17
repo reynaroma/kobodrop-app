@@ -8,7 +8,7 @@ import { useRef } from 'react';
 function Features() {
 
   const featureRef = useRef(null);
-  const isFeatureRefInView = useInView(featureRef, { margin: "-100px" });
+  const isFeatureRefInView = useInView(featureRef, { once: true});
 
   return (
     <section id="features" ref={featureRef}
@@ -22,20 +22,19 @@ function Features() {
         <motion.p
           initial={{ x: 100, opacity: 0 }}
           animate={isFeatureRefInView ? { x: 0, opacity: 1 } : {}}
-          transition={{ delay: 0.5, duration: 0.5 }}
+          transition={{ delay: 0.4, duration: 0.5 }}
         >
           Spend smarter, lower your bills, get cashback on everything you buy, <br />
           and unlock credit to grow your business.
         </motion.p>
-
       </article>
-
-      <motion.article
-        initial={{ x: 100, opacity: 0 }}
-        animate={isFeatureRefInView ? { x: 0, opacity: 1 } : {}}
-        transition={{ delay: 0.7, duration: 0.5 }}
+      <article
         className="flex w-full flex-col gap-8 overflow-hidden xl:h-96 xl:flex-row">
-        <div className="flex flex-col rounded-2xl bg-sky-100 px-4 sm:px-0 md:flex-row md:gap-8 xl:w-2/3">
+        <motion.div
+          initial={{ x: 100, opacity: 0 }}
+          animate={isFeatureRefInView ? { x: 0, opacity: 1 } : {}}
+          transition={{ delay: 0.6, duration: 0.5 }}
+          className="flex flex-col rounded-2xl bg-sky-100 px-4 sm:px-0 md:flex-row md:gap-8 xl:w-2/3">
           <div className="mt-10 flex flex-col justify-center gap-4 text-center sm:mx-10 md:mx-0 md:ml-10 md:w-1/2 md:text-left">
             <h2 className="m-auto text-center text-3xl font-semibold text-gray-800 sm:w-[18ch] md:m-0 md:text-left">Pay with Kobodrop, quick, simple and easy</h2>
             <p className="m-auto text-center text-gray-500 sm:w-[34ch] md:m-0 md:text-left">
@@ -45,8 +44,12 @@ function Features() {
           <div className='m-auto mt-10 max-w-72 md:mx-10 md:w-1/2 lg:mx-0'>
             <img src={AppFrame} alt='Kobodrop app frame' />
           </div>
-        </div>
-        <div className='flex flex-col justify-center gap-4 rounded-2xl bg-indigo-100 p-10 xl:w-1/3'>
+        </motion.div>
+        <motion.div
+          initial={{ x: 100, opacity: 0 }}
+          animate={isFeatureRefInView ? { x: 0, opacity: 1 } : {}}
+          transition={{ delay: 0.8, duration: 0.5 }}
+          className='flex flex-col justify-center gap-4 rounded-2xl bg-indigo-100 p-10 xl:w-1/3'>
           <div className='w-fit rounded-full bg-indigo-200 p-4'>
             <img src={ShieldCheck} alt='' />
           </div>
@@ -54,14 +57,15 @@ function Features() {
           <p className='text-gray-500'>
             Your money is 100% safe and secure on Kobodrop. No hassles, no glitches, get access to your money anytime.
           </p>
-        </div>
-      </motion.article>
-      <motion.article
-        initial={{ x: 100, opacity: 0 }}
-        animate={isFeatureRefInView ? { x: 0, opacity: 1 } : {}}
-        transition={{ delay: 0.9, duration: 0.5 }}
+        </motion.div>
+      </article>
+      <article
         className="flex w-full flex-col gap-8 xl:h-96 xl:flex-row">
-        <div className='flex flex-col justify-center gap-4 rounded-2xl bg-orange-100 p-10 xl:w-1/3'>
+        <motion.div
+          initial={{ x: 100, opacity: 0 }}
+          animate={isFeatureRefInView ? { x: 0, opacity: 1 } : {}}
+          transition={{ delay: 0.10, duration: 0.5 }}
+          className='flex flex-col justify-center gap-4 rounded-2xl bg-orange-100 p-10 xl:w-1/3'>
           <div className='w-fit rounded-full bg-orange-200 p-4'>
             <img src={Coins} alt='' />
           </div>
@@ -69,8 +73,12 @@ function Features() {
           <p className='text-gray-500'>
             Kobodrop reduced payments maintenance and processing fees. No hidden fees.
           </p>
-        </div>
-        <div className="flex flex-col  gap-8 overflow-hidden rounded-2xl bg-sky-100 px-4 sm:px-0 md:flex-row md:gap-8 xl:w-2/3">
+        </motion.div>
+        <motion.div
+          initial={{ x: 100, opacity: 0 }}
+          animate={isFeatureRefInView ? { x: 0, opacity: 1 } : {}}
+          transition={{ delay: 0.12, duration: 0.5 }}
+          className="flex flex-col  gap-8 overflow-hidden rounded-2xl bg-sky-100 px-4 sm:px-0 md:flex-row md:gap-8 xl:w-2/3">
           <div className="mt-10 flex flex-col justify-center gap-4 text-center sm:mx-10 md:mx-0 md:ml-10 md:w-1/2 md:text-left md:mt-0">
             <h2 className="m-auto text-center text-3xl font-semibold text-gray-800 sm:w-[18ch] md:m-0 md:text-left">Send, receive and Exchange money</h2>
             <p className="m-auto text-center text-gray-500 sm:w-[34ch] md:m-0 md:text-left">
@@ -80,9 +88,9 @@ function Features() {
           <div className='m-auto max-w-96 md:mx-10 md:w-1/2 lg:mx-0 md:mt-36'>
             <img src={Frames} alt='Frame displaying logos of various payment solutions' />
           </div>
-        </div>
+        </motion.div>
 
-      </motion.article>
+      </article>
     </section>
   )
 }
