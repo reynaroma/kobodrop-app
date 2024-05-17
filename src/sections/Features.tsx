@@ -14,7 +14,7 @@ function Features() {
       className="flex max-w-7xl flex-col gap-10 px-10 pt-10 lg:px-12 xl:pt-20 m-auto">
       <article className="m-auto w-[30ch] text-center text-gray-500 md:m-0 md:w-full">
         <motion.h2
-          initial={{ opacity: 0, x: 50 }}
+          initial={{ opacity: 0, x: 100 }}
           whileInView={
             {
               opacity: 1,
@@ -24,7 +24,7 @@ function Features() {
           viewport={{ once: true }}
           className="mb-4 text-4xl font-semibold text-gray-800">Make every penny count</motion.h2>
         <motion.p
-          initial={{ opacity: 0, x: -50 }}
+          initial={{ opacity: 0, x: -100 }}
           whileInView={
             {
               opacity: 1,

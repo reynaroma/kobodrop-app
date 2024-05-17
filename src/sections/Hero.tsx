@@ -51,12 +51,29 @@ function Hero() {
           <StoreLinks type={BtnTypes.Standard} />
         </motion.div>
       </div>
-      <div className="md:w-3/6 xl:mb-12 xl:overflow-hidden">
+      <div
+        className="md:w-3/6 xl:mb-12 xl:overflow-hidden">
         {/* RIGHT SIDE */}
-        <img
+        <motion.img
+          initial={{ opacity: 0, x: 200 }}
+          whileInView={
+            {
+              opacity: 1,
+              x: 0,
+              transition: { duration: 1 }
+            }}
+          viewport={{ once: true }}
           className="right-0 m-auto w-72 xl:absolute xl:left-6 xl:mt-32 xl:right-0 xl:w-80"
           src={Phone} alt="Kobodrop App Frame" />
-        <img
+        <motion.img
+          initial={{ opacity: 0, x: -200 }}
+          whileInView={
+            {
+              opacity: 1,
+              x: 0,
+              transition: { duration: 1 }
+            }}
+          viewport={{ once: true }}
           className="hidden rounded-2xl xl:flex"
           src={HeroImage} alt="A woman happily using Kobodrop" />
       </div>
