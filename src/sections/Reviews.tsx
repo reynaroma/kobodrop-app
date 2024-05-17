@@ -42,9 +42,31 @@ function Reviews() {
           className="mb-4 max-w-[14ch] text-center text-4xl font-semibold text-gray-800 lg:w-full lg:text-left leading-snug">
           Join other thousands of people growing with Kobodrop
         </motion.h2>
-        <StoreLinks type={BtnTypes.Standard} />
+        <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={
+            {
+              opacity: 1,
+              x: 0,
+              transition: { duration: 1 }
+            }}
+          viewport={{ once: true }}
+        >
+          <StoreLinks type={BtnTypes.Standard} />
+        </motion.div>
       </article>
-      <Carousel slides={slides} />
+      <motion.div
+        initial={{ opacity: 0, x: 50 }}
+        whileInView={
+          {
+            opacity: 1,
+            x: 0,
+            transition: { duration: 1 }
+          }}
+        viewport={{ once: true }}
+      >
+        <Carousel slides={slides} />
+      </motion.div>
     </section>
   )
 }
