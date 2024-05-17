@@ -1,5 +1,7 @@
 import Carousel from "../common/Carousel";
 import StoreLinks, { BtnTypes } from "../common/StoreLinks";
+import { motion } from "framer-motion";
+import { useRef } from "react";
 
 function Reviews() {
   const slides = [
@@ -23,12 +25,23 @@ function Reviews() {
     }
   ];
 
+  const reviewsRef = useRef(null);
+
   return (
     <section id="reviews" className="flex max-w-7xl flex-col items-center justify-between px-8 py-20 lg:m-auto lg:flex-row lg:px-12">
-      <article className="mb-10 flex flex-col items-center justify-center lg:w-1/2 lg:items-start">
-        <h2 className="mb-4 max-w-[14ch] text-center text-4xl font-semibold text-gray-800 lg:w-full lg:text-left leading-snug">
+      <article ref={reviewsRef} className="mb-10 flex flex-col items-center justify-center lg:w-1/2 lg:items-start">
+        <motion.h2
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={
+            {
+              opacity: 1,
+              x: 0,
+              transition: { duration: 1 }
+            }}
+          viewport={{ once: true }}
+          className="mb-4 max-w-[14ch] text-center text-4xl font-semibold text-gray-800 lg:w-full lg:text-left leading-snug">
           Join other thousands of people growing with Kobodrop
-        </h2>
+        </motion.h2>
         <StoreLinks type={BtnTypes.Standard} />
       </article>
       <Carousel slides={slides} />

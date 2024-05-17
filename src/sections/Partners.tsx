@@ -11,26 +11,35 @@ import Mobile from '../assets/logo-wall/mobile.png';
 import Ikeja from '../assets/logo-wall/ikeja.png';
 import Dstv from '../assets/logo-wall/dstv.png';
 import LogoWall from "../common/LogoWall";
-import { motion, useInView } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { useRef } from 'react';
 
 function Partners() {
 
   const partnersRef = useRef(null);
-  const isPartnersRefInView = useInView(partnersRef, { once: true });
 
   return (
     <section ref={partnersRef} id="partners" className="mt-20 flex flex-col bg-gray-50 py-20">
       <article className="mb-10 w-full px-8 text-center lg:px-12">
         <motion.h2
-          initial={{ y: -100, opacity: 0 }}
-          animate={isPartnersRefInView ? { y: 0, opacity: 1 } : {}}
-          transition={{ delay: 0.5, duration: 0.5 }}
+          initial={{ opacity: 0, y: -100 }}
+          whileInView={
+            {
+              opacity: 1,
+              y: 0,
+              transition: { duration: 1.01 }
+            }}
+          viewport={{ once: true }}
           className="mb-4 text-4xl font-semibold text-gray-800">Transact seamless with...</motion.h2>
         <motion.p
-          initial={{ y: -100, opacity: 0 }}
-          animate={isPartnersRefInView ? { y: 0, opacity: 1 } : {}}
-          transition={{ delay: 0.3, duration: 0.5 }}
+          initial={{ opacity: 0, y: -100 }}
+          whileInView={
+            {
+              opacity: 1,
+              y: 0,
+              transition: { duration: 1.01 }
+            }}
+          viewport={{ once: true }}
           className="">Connect your other accounts to Kobodrop seamlessly. Kobodrop supports 200+ <br />
           integrations with other payment platforms like stripe, paypal, payoneer and others</motion.p>
       </article>
