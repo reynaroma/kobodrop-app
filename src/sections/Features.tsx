@@ -56,7 +56,11 @@ function Features() {
           </p>
         </div>
       </motion.article>
-      <article className="flex w-full flex-col gap-8 xl:h-96 xl:flex-row">
+      <motion.article
+        initial={{ x: 100, opacity: 0 }}
+        animate={isFeatureRefInView ? { x: 0, opacity: 1 } : {}}
+        transition={{ delay: 0.9, duration: 0.5 }}
+        className="flex w-full flex-col gap-8 xl:h-96 xl:flex-row">
         <div className='flex flex-col justify-center gap-4 rounded-2xl bg-orange-100 p-10 xl:w-1/3'>
           <div className='w-fit rounded-full bg-orange-200 p-4'>
             <img src={Coins} alt='' />
@@ -78,7 +82,7 @@ function Features() {
           </div>
         </div>
 
-      </article>
+      </motion.article>
     </section>
   )
 }

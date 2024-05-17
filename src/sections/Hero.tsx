@@ -1,9 +1,12 @@
 import StoreLinks, { BtnTypes } from "../common/StoreLinks";
 import Phone from "../assets/mockup.svg";
 import HeroImage from "../assets/hero.png";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, useInView } from "framer-motion";
+import { useRef } from "react";
 
 function Hero() {
+  const heroRef = useRef(null);
+  const isHeroRefInView = useInView(heroRef);
   return (
     <section className="relative mt-4 flex h-fit max-w-7xl flex-col
     items-center gap-10 px-8 sm:gap-16 md:my-0 md:flex-row md:h-[85vh]
