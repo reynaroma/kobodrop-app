@@ -2,7 +2,7 @@ import AppFrame from '../assets/app_frame.png';
 import ShieldCheck from '../assets/icons/check.png';
 import Coins from '../assets/icons/coins.png';
 import Frames from '../assets/frames.png';
-import { motion, useInView, useScroll } from 'framer-motion';
+import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 
 function Features() {
