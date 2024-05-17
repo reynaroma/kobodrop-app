@@ -22,13 +22,16 @@ function Nav() {
               className="flex">
               <motion.div
                 whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.85 }}
               >
                 <ButtonLink href="#" children={<img src={Kobodrop} alt="Kobodrop logo" />} />
               </motion.div>
               <div className="hidden sm:flex space-x-4 items-center ml-4
               lg:ml-8 lg:space-x-8">
                 {navLinks.map((link, index) => (
-                  <motion.div whileHover={{ scale: 1.1 }}>
+                  <motion.div
+                    whileTap={{ scale: 0.85 }}
+                    whileHover={{ scale: 1.1 }}>
                     <ButtonLink
                       key={index}
                       href={link.href}
@@ -39,7 +42,10 @@ function Nav() {
                 ))}
               </div>
             </div>
-            <motion.div whileHover={{ scale: 1.2 }}>
+            <motion.div
+              whileHover={{ scale: 1.2 }}
+              whileTap={{ scale: 0.85 }}
+            >
               <ButtonLink
                 href="https://play.google.com"
                 target="_blank"
